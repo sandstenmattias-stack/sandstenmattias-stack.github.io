@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="sv">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Min bollbok</title>
+<style>*{box-sizing:border-box}body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:28px;font:16px/1.6 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#fbfaf7;color:#2b2724}.k{max-width:32rem;text-align:center}h1{font-size:1.35rem;margin:0 0 .4rem;color:#7a1430}p{margin:.4rem 0;color:#8d8177}a.knapp{display:inline-block;margin-top:1.1rem;padding:.75rem 1.4rem;background:#7a1430;color:#fff;text-decoration:none;border-radius:8px;font-weight:600}ul{text-align:left;margin-top:1.4rem;padding-left:1.2rem}li{margin:.2rem 0}.fot{margin-top:2.2rem;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:#b7ad9f}</style>
+<body>
+<div class="k">
+<h1 id="h">Öppnar filmen …</h1>
+<p id="p"></p>
+<a class="knapp" id="a" style="display:none">Händer inget? Tryck här</a>
+<div class="fot">Qviding FIF Vinröd P2017</div>
+</div>
+<script>
+var L={"01":["01 Sulrullningar",[["Titta","https://www.youtube.com/watch?v=jwUp9nJWqtM"]]],"02":["02 Tå-tappar",[["Titta","https://www.youtube.com/watch?v=ODIw8K66QiI"]]],"03":["03 Insida–insida",[["Titta","https://www.youtube.com/watch?v=2_o6BijX1nU"]]],"04":["04 Sula-drag i sidled",[["Titta","https://www.youtube.com/watch?v=Qo7XRdS6H2Q"]]],"05":["05 Rulla & stopp",[["Titta","https://www.youtube.com/watch?v=74L7BddiiB4"]]],"06":["06 Insidesdribbling",[["Titta","https://www.youtube.com/watch?v=QpNt0Ixng3o"]]],"07":["07 Utsidesdribbling",[["Titta","https://www.youtube.com/watch?v=lzNNW81FDko"]]],"08":["08 Slalom runt skor och koner",[["Titta","https://www.youtube.com/watch?v=XCoSPAADfXE"]]],"09":["09 Åttan runt två koner",[["Titta","https://www.youtube.com/watch?v=wMFSgIytbfI"]]],"10":["10 Insida-utsida",[["Titta","https://www.youtube.com/watch?v=INP7SZnmkss"]]],"11":["11 Insidesvändning (kroken)",[["Titta","https://www.youtube.com/watch?v=h_b7ObXN9Oo"]]],"12":["12 Utsidesvändning",[["Titta","https://www.youtube.com/watch?v=vKI_DphaToo"]]],"13":["13 Dra-tillbaka-vändning",[["Titta","https://www.youtube.com/watch?v=N2tL3QMfvLE"]]],"14":["14 Cruyff-vändning",[["Titta","https://www.youtube.com/watch?v=bpyA6GoScfg"]]],"15":["15 Snurren (rouletten)",[["Titta","https://www.youtube.com/watch?v=PnTY6wQy4sk"]]],"16":["16 Överstegen",[["Titta","https://www.youtube.com/watch?v=y1UJrlWu7J8"]]],"17":["17 Saxen",[["Titta","https://www.youtube.com/watch?v=arfeLaqn9o8"]]],"18":["18 Kroketten",[["Titta","https://www.youtube.com/watch?v=8WYQqnrBnVk"]]],"19":["19 Kroppsfint",[["Titta","https://www.youtube.com/watch?v=nqh7497qMpw"]]],"20":["20 Stopp & spurt",[["Titta","https://www.youtube.com/watch?v=-W4CSIntI6E"]]],"21":["21 Snabba fötter över linjen",[["Titta","https://www.youtube.com/watch?v=HTrz3Rt8axo"]]],"22":["22 Mjuk mottagning",[["Titta","https://www.youtube.com/watch?v=KXtGqt_HurQ"]]],"23":["23 Riktad första touch",[["Titta","https://www.youtube.com/watch?v=Pd_vaT4HwCA"]]],"24":["24 Vägg-passa & ta emot",[["Titta","https://www.youtube.com/watch?v=quDH7EgDWRI"]]],"25":["25 Ta ner en studsande boll",[["Titta","https://www.youtube.com/watch?v=U7IYr7to27s"]]],"26":["26 Lårnedtag",[["Titta","https://www.youtube.com/watch?v=BVEq5VC3M6Y"]]],"27":["27 Passa & ta emot rättvänd",[["Titta","https://www.youtube.com/watch?v=4jnR7f8G7xM"]]],"28":["28 Passa genom porten",[["Titta","https://www.youtube.com/watch?v=7KsGTZhXXxI"]]],"29":["29 En-två",[["Titta","https://www.youtube.com/watch?v=WBJCjlvqUog"]]],"30":["30 Långpass & ta ner",[["Slå passet","https://www.youtube.com/watch?v=MEyCcC5N5DQ"],["Ta ner bollen","https://www.youtube.com/watch?v=RDpo2AYEXGo"]]],"31":["31 Kolla-över-axeln-passet",[["Titta","https://www.youtube.com/watch?v=-ZTHTRzbCi0"]]],"32":["32 Fånga & kasta",[["Titta","https://www.youtube.com/watch?v=Wsrcl2qdcQs"]]],"33":["33 Studsa & fånga",[["Titta","https://www.youtube.com/watch?v=xoYz_0kba_c"]]],"34":["34 Kasta ut spelet",[["Titta","https://www.youtube.com/watch?v=vFkVX8CFtCA"]]],"35":["35 Grundjonglering",[["Titta","https://www.youtube.com/watch?v=SzZ7Ecql-sg"]]],"36":["36 Lår + fot",[["Titta","https://www.youtube.com/watch?v=s3q1d_n4JMM"]]],"37":["37 Varannan fot",[["Titta","https://www.youtube.com/watch?v=gJ4l8ZGjvT0"]]],"38":["38 Fånga bollen på vristen",[["Titta","https://www.youtube.com/watch?v=C6xPIZdCML8"]]],"39":["39 Runt-om",[["Titta","https://www.youtube.com/watch?v=H6UWg1fuq-Q"]]],"40":["40 Pricka hörnen",[["Titta","https://www.youtube.com/watch?v=U3JmkMLaclM"]]],"41":["41 Straff-lek",[["Titta","https://www.youtube.com/watch?v=JnjEcbLe0Cc"]]],"42":["42 Avslut efter touch",[["Titta","https://www.youtube.com/watch?v=K5gYvmWmDfM"]]],"43":["43 Volley på lek",[["Titta","https://www.youtube.com/watch?v=UsVyCNe1UIk"]]],"44":["Bonuspass till Tiominutern",[]],"45":["Bonuspass till Väggpasset",[]],"46":["Bonuspass till Stora passet",[]],"jul":["Julhälsning",[]]};
+var h=document.getElementById('h'),p=document.getElementById('p'),a=document.getElementById('a');
+var m=location.pathname.match(/\/b\/([A-Za-z0-9]+)\/?$/);
+var r=m?L[m[1].toLowerCase()]:null;
+if(!r){
+  h.textContent='Den koden finns inte';
+  p.textContent='Kolla siffran på kortet och försök igen.';
+}else if(!r[1]){
+  h.textContent=(m[1].toLowerCase()==='jul')?'Den här är inte öppen än':'Kommer snart';
+  p.textContent=(m[1].toLowerCase()==='jul')?'Kom tillbaka på julafton.'
+    :'Det här passet är inte klart än. Testa igen om någon vecka.';
+}else{
+  document.title=r[0];
+  h.textContent=r[0];
+  if(r[1].length>1){
+    p.textContent='Två filmer hör till det här kortet.';
+    a.outerHTML=r[1].map(function(x){
+      return '<a class="knapp" style="margin:.6rem .4rem 0" href="'+x[1]+'">'+x[0]+'</a>';
+    }).join('');
+  }else{
+    p.textContent='Filmen öppnas av sig själv.';
+    a.href=r[1][0][1];a.style.display='inline-block';
+    location.replace(r[1][0][1]);
+  }
+}
+</script>
