@@ -19,7 +19,7 @@ var r=m?L[m[1].toLowerCase()]:null;
 if(!r){
   h.textContent='Den koden finns inte';
   p.textContent='Kolla siffran på kortet och försök igen.';
-}else if(!r[1]){
+}else if(!r[1].length){
   h.textContent=(m[1].toLowerCase()==='jul')?'Den här är inte öppen än':'Kommer snart';
   p.textContent=(m[1].toLowerCase()==='jul')?'Kom tillbaka på julafton.'
     :'Det här passet är inte klart än. Testa igen om någon vecka.';
